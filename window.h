@@ -18,6 +18,10 @@
 
 #include <QWidget>
 
+SOURCES += main.cpp \
+	   mainwindow.cpp \
+	   window.cpp
+
 class QPushButton;
 class Window : public QWidget
 {

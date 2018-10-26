@@ -18,6 +18,10 @@
 
 #include <QMainWindow>
 
+SOURCES += main.cpp \
+	   mainWindow.cpp \
+	   window.cpp
+
 namespace Ui {
 class MainWindow;
 }
