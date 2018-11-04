@@ -1,0 +1,12 @@
+Lubuntu Welcome Mockup Notes
+
+COLOR
+Dark tone: 282d39
+Mid tone: 4d5565
+Light tone: bebebe
+Humming bird is white (ffffff) brought down to 4.8% opacity. 
+
+SIZE
+Main Window:
+Large Button:
+Logo: 
