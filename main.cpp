@@ -1,77 +1,55 @@
-# Copyright (C) 2018 Lubuntu
+// Copyright (C) 2018 Lubuntu
 
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
 
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+#include "mainwindow.h"
 #include <QApplication>
-#include <QPushButton>
-#include "window.h"
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-    QApplication app (argc, argv);
+    QApplication app(argc, argv);
+    MainWindow w;
+    w.show();
 
-    // Set size of the window
-    QWidget window;
-    window.setFixedSize(800, 600);
+    // Manual Button
 
-    // Font
-    QFont font ("Courier");
+    // Monitor Setup Button
 
-    // Button Format
-    // (x pos, y pos, width, length)
+    // Control Center Button
 
+    // Community Button
+
+    // Contribute Button
+
+    /*
     // News Button
     QPushButton *buttonNews = new QPushButton("Latest news for Lubuntu", &window);
-    buttonNews->setGeometry(300, 50, 250, 30);
-    buttonNews->setToolTip("Click here for the lastest news for Lubuntu 18.40 Cosmic Cuttlefish!");
-    buttonNews->setFont(font);
 
     // Change Monitor Settings Button
     QPushButton *buttonMonitorSettings = new QPushButton("Change monitor settings", &window);
-    buttonMonitorSettings->setGeometry(300, 125, 250, 30);
-    buttonMonitorSettings->setToolTip("Click here to change your monitor settings!");
-    buttonMonitorSettings->setFont(font);
 
     // Change Desktop Resolution Button
     QPushButton *buttonDesktopResolution = new QPushButton("Change desktop resolution", &window);
-    buttonDesktopResolution->setGeometry(300, 200, 250, 30);
-    buttonDesktopResolution->setToolTip("Click here to change your desktop resolution!");
-    buttonDesktopResolution->setFont(font);
 
     // Icon Theme Button
     QPushButton *buttonIconTheme = new QPushButton("Latest icon themes for Lubuntu", &window);
-    buttonIconTheme->setGeometry(225, 275, 400, 30);
-    buttonIconTheme->setToolTip("Click here to download the latest icon themes for Lubuntu 18.40 Cosmic Cuttlefish");
-    buttonIconTheme->setFont(font);
 
     // Bug Button
     QPushButton *buttonBug = new QPushButton("Report bugs to Lubuntu team", &window);
-    buttonBug->setGeometry(225, 350, 400, 30);
-    buttonBug->setToolTip("Click here to report bugs to the Lubuntu development team!");
-    buttonBug->setFont(font);
 
     // Manual Button
     QPushButton *buttonManual = new QPushButton("Read manual for Lubuntu help", &window);
-    buttonManual->setGeometry(225, 425, 400, 30);
-    buttonManual->setToolTip("Click here to access the manual for Lubuntu 18.40 Cosmic Cuttlefish!");
-    buttonManual->setFont(font);
-
-    // Quit Button
-    QPushButton *buttonQuit = new QPushButton("Quit", &window);
-    buttonQuit->setGeometry(300, 500, 250, 30);
-    buttonQuit->setToolTip("Click here to quit the Welcome Center!");
-    buttonQuit->setFont(font);
 
     // Quit Functionality (Using SIGNAL event, and QApplication::instance())
     // connect(m_button, SIGNAL (clicked()), QApplication::instance(), SLOT (quit()));
@@ -79,5 +57,8 @@ int main(int argc, char **argv)
     // Window window;
     window.show();
 
+    */
+
     return app.exec();
+
 }
