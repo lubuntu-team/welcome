@@ -53,17 +53,18 @@ void MainWindow::on_buttonManual_clicked()
 
 void MainWindow::on_buttonMonitorSetup_clicked()
 {
+    // Monitor Setup link:
+    // This is in: /usr/share/applications/lxrandr.desktop
 
 }
 
 void MainWindow::on_buttonControlCenter_clicked()
 {
-
 }
 
 void MainWindow::on_buttonCommunity_clicked()
 {
-
+    // This will open up another UI window that contains more community specific information
 }
 
 void MainWindow::on_buttonContribute_clicked()
