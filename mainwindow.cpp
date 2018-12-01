@@ -17,26 +17,14 @@
 #include "ui_mainwindow.h"
 #include <QDesktopServices>
 #include <QUrl>
+#include <QDir>
+#include <QProcess>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    // connect(ui->buttonManual, SIGNAL(clicked()),
-    //        IDK, SLOT(OPENURL));
-
-    /*
-    // Connect the signal of the horizontal slider to the slot of the first progress bar
-    connect(ui->buttonManual, SIGNAL(valueChanged(int)),
-            ui->progressBar, SLOT(setValue(int)));
-
-
-    // Disconnect the first progress bar with disconnect()
-    disconnect(ui->horizontalSlider, SIGNAL(valueChanged(int)),
-               ui->progressBar, SLOT(setValue(int)));
-    */
 }
 
 MainWindow::~MainWindow()
@@ -53,9 +41,9 @@ void MainWindow::on_buttonManual_clicked()
 
 void MainWindow::on_buttonMonitorSetup_clicked()
 {
-    // Monitor Setup link:
-    // This is in: /usr/share/applications/lxrandr.desktop
-
+    QProcess *process = new QProcess(this);
+    QString file = "/usr/bin/lxqt-config-monitor";
+    process->start(file);
 }
 
 void MainWindow::on_buttonControlCenter_clicked()
