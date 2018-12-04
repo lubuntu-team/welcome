@@ -41,6 +41,10 @@ private slots:
 
     void on_buttonContribute_clicked();
 
+    void on_actionAbout_triggered();
+
+    void on_actionExit_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -19,6 +19,7 @@
 #include <QUrl>
 #include <QDir>
 #include <QProcess>
+#include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -36,7 +37,6 @@ void MainWindow::on_buttonManual_clicked()
 {
     QString manualLink = "https://wiki.ubuntu.com/Lubuntu/DocumentationTeam/Manual";
     QDesktopServices::openUrl(QUrl(manualLink));
-
 }
 
 void MainWindow::on_buttonMonitorSetup_clicked()
@@ -59,4 +59,14 @@ void MainWindow::on_buttonContribute_clicked()
 {
     QString contributeLink = "https://launchpad.net/~lubuntu-wiki-docs";
     QDesktopServices::openUrl(QUrl(contributeLink));
+}
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QMessageBox::information(this, "About", "Created by Samuel Banya and Wendy Hill © Lubuntu 2018");
+}
+
+void MainWindow::on_actionExit_triggered()
+{
+    QApplication::quit();
 }

@@ -22,43 +22,6 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    // Manual Button
-
-    // Monitor Setup Button
-
-    // Control Center Button
-
-    // Community Button
-
-    // Contribute Button
-
-    /*
-    // News Button
-    QPushButton *buttonNews = new QPushButton("Latest news for Lubuntu", &window);
-
-    // Change Monitor Settings Button
-    QPushButton *buttonMonitorSettings = new QPushButton("Change monitor settings", &window);
-
-    // Change Desktop Resolution Button
-    QPushButton *buttonDesktopResolution = new QPushButton("Change desktop resolution", &window);
-
-    // Icon Theme Button
-    QPushButton *buttonIconTheme = new QPushButton("Latest icon themes for Lubuntu", &window);
-
-    // Bug Button
-    QPushButton *buttonBug = new QPushButton("Report bugs to Lubuntu team", &window);
-
-    // Manual Button
-    QPushButton *buttonManual = new QPushButton("Read manual for Lubuntu help", &window);
-
-    // Quit Functionality (Using SIGNAL event, and QApplication::instance())
-    // connect(m_button, SIGNAL (clicked()), QApplication::instance(), SLOT (quit()));
-
-    // Window window;
-    window.show();
-
-    */
-
     return app.exec();
 
 }
