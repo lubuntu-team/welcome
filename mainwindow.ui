@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Lubuntu Welcome Center</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QFormLayout" name="formLayout">
@@ -19,6 +19,9 @@
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QPushButton" name="buttonManual">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;View online manual to see latest changes, fixes, and tips &amp;amp; tricks&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Lubuntu Manual</string>
         </property>
@@ -26,29 +29,31 @@
       </item>
       <item>
        <widget class="QPushButton" name="buttonMonitorSetup">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Adjust monitor settings&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Monitor Setup</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="buttonControlCenter">
-        <property name="text">
-         <string>Control Center</string>
+       <widget class="QPushButton" name="buttonLXQTConfigurationCenter">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open up LXQT Configuration Center to change LXQt settings&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="buttonCommunity">
         <property name="text">
-         <string>Community</string>
+         <string>LXQT Configuration Center</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="buttonContribute">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;View the online Lubuntu Contribution Guide, and learn how to become a part of the team!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
-         <string>Contribute</string>
+         <string>Contribute To Lubuntu</string>
         </property>
        </widget>
       </item>

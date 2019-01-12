@@ -35,7 +35,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_buttonManual_clicked()
 {
-    QString manualLink = "https://wiki.ubuntu.com/Lubuntu/DocumentationTeam/Manual";
+    QString manualLink = "https://manual.lubuntu.me";
     QDesktopServices::openUrl(QUrl(manualLink));
 }
 
@@ -46,24 +46,22 @@ void MainWindow::on_buttonMonitorSetup_clicked()
     process->start(file);
 }
 
-void MainWindow::on_buttonControlCenter_clicked()
+void MainWindow::on_buttonLXQTConfigurationCenter_clicked()
 {
-}
-
-void MainWindow::on_buttonCommunity_clicked()
-{
-    // This will open up another UI window that contains more community specific information
+    QProcess *process = new QProcess(this);
+    QString file = "/usr/bin/lxqt-config";
+    process->start(file);
 }
 
 void MainWindow::on_buttonContribute_clicked()
 {
-    QString contributeLink = "https://launchpad.net/~lubuntu-wiki-docs";
+    QString contributeLink = "https://phab.lubuntu.me/w/contributor-guide/";
     QDesktopServices::openUrl(QUrl(contributeLink));
 }
 
 void MainWindow::on_actionAbout_triggered()
 {
-    QMessageBox::information(this, "About", "Created by Samuel Banya and Wendy Hill © Lubuntu 2018");
+    QMessageBox::information(this, "About", "Created by Samuel Banya\n\n© Lubuntu 2018");
 }
 
 void MainWindow::on_actionExit_triggered()

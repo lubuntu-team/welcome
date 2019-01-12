@@ -35,15 +35,14 @@ private slots:
 
     void on_buttonMonitorSetup_clicked();
 
-    void on_buttonControlCenter_clicked();
-
-    void on_buttonCommunity_clicked();
+    void on_buttonLXQTConfigurationCenter_clicked();
 
     void on_buttonContribute_clicked();
 
     void on_actionAbout_triggered();
 
     void on_actionExit_triggered();
+
 
 private:
     Ui::MainWindow *ui;
