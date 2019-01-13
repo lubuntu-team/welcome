@@ -38,12 +38,12 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="buttonLXQTConfigurationCenter">
+       <widget class="QPushButton" name="buttonLXQtConfigurationCenter">
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open up LXQT Configuration Center to change LXQt settings&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Open up LXQt Configuration Center to change LXQt settings&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
-         <string>LXQT Configuration Center</string>
+         <string>LXQt Configuration Center</string>
         </property>
        </widget>
       </item>

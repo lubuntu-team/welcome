@@ -35,7 +35,7 @@ private slots:
 
     void on_buttonMonitorSetup_clicked();
 
-    void on_buttonLXQTConfigurationCenter_clicked();
+    void on_buttonLXQtConfigurationCenter_clicked();
 
     void on_buttonContribute_clicked();
 

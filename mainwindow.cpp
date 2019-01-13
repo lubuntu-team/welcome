@@ -46,7 +46,7 @@ void MainWindow::on_buttonMonitorSetup_clicked()
     process->start(file);
 }
 
-void MainWindow::on_buttonLXQTConfigurationCenter_clicked()
+void MainWindow::on_buttonLXQtConfigurationCenter_clicked()
 {
     QProcess *process = new QProcess(this);
     QString file = "/usr/bin/lxqt-config";
