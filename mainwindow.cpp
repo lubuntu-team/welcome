@@ -53,6 +53,12 @@ void MainWindow::on_buttonLXQtConfigurationCenter_clicked()
     process->start(file);
 }
 
+void MainWindow::on_buttonCommunity_clicked()
+{
+    QString contributeLink = "https://lubuntu.me/links/";
+    QDesktopServices::openUrl(QUrl(contributeLink));
+}
+
 void MainWindow::on_buttonContribute_clicked()
 {
     QString contributeLink = "https://phab.lubuntu.me/w/contributor-guide/";

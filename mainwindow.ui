@@ -48,6 +48,16 @@
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="buttonCommunity">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Want to talk with other Lubuntu users? Join the community!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Lubuntu Community</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="buttonContribute">
         <property name="toolTip">
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;View the online Lubuntu Contribution Guide, and learn how to become a part of the team!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>

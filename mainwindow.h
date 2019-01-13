@@ -37,6 +37,8 @@ private slots:
 
     void on_buttonLXQtConfigurationCenter_clicked();
 
+    void on_buttonCommunity_clicked();
+
     void on_buttonContribute_clicked();
 
     void on_actionAbout_triggered();
