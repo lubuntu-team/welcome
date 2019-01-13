@@ -15,11 +15,22 @@
 
 #include "mainwindow.h"
 #include <QApplication>
+#include <QStyle>
+#include <QDesktopWidget>
+#include <QScreen>
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     MainWindow w;
+    w.setGeometry(
+        QStyle::alignedRect(
+            Qt::LeftToRight,
+            Qt::AlignCenter,
+            w.size(),
+            QGuiApplication::screens().first()->geometry()
+        )
+    );
     w.show();
 
     return app.exec();
