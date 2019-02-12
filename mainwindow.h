@@ -1,4 +1,4 @@
-// Copyright (C) 2018 Lubuntu
+// Copyright (C) 2019 Lubuntu
 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -45,6 +45,8 @@ private slots:
 
     void on_actionExit_triggered();
 
+
+    void on_checkBox_stateChanged(int arg1);
 
 private:
     Ui::MainWindow *ui;

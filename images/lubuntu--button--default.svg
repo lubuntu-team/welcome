@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="32" viewBox="0 0 128 32">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="127" height="31" x=".5" y=".5" stroke="#FFF" stroke-opacity=".16" rx="4"/>
+    <text fill="#EAE8FF" fill-opacity=".87" font-family="Ubuntu-Medium, Ubuntu" font-size="14" font-weight="400" letter-spacing="1.4">
+      <tspan x="34.509" y="16">ACTIO</tspan> <tspan x="83.131" y="16">N</tspan>
+    </text>
+  </g>
+</svg>

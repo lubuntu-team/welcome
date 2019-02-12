@@ -1,4 +1,4 @@
-// Copyright (C) 2018 Lubuntu
+// Copyright (C) 2019 Lubuntu
 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -67,10 +67,28 @@ void MainWindow::on_buttonContribute_clicked()
 
 void MainWindow::on_actionAbout_triggered()
 {
-    QMessageBox::information(this, "About", "Created by Samuel Banya\n\n© Lubuntu 2018");
+    // QAction: this class helps provide icons and images for individual methods
+    // http://doc.qt.io/qt-5/qaction.html
+    // I need to find out how to insert the Lubuntu logo with this method
+    QMessageBox::information(this, "About", "Created By:\n\nSamuel Banya (Developer)\nSimon Quigley (Lubuntu Release Manager)\nArtem Abutalipov (UX/UI Designer)\n\n© Lubuntu 2019");
 }
 
 void MainWindow::on_actionExit_triggered()
 {
+    // Tell the user that since the checkbox is unchecked, the Welcome Center will NOT run on
+    // startup (COMMENTED OUT FOR LATER RESEARCH)
+
+    // Related Documentation:
+    // http://doc.qt.io/qt-5/qt.html#CheckState-enum
+
+    // if ui->checkBox->QCheckBox::checkState(Unchecked) {
+       // QMessageBox::information(this, "The Lubuntu Welcome Center will now NOT begin on startup.\nThank you for installing Lubuntu!");
+    // }
     QApplication::quit();
+}
+
+void MainWindow::on_checkBox_stateChanged(int arg1)
+{
+    // Add checkbox stateChanged functionality that depends on a boolean variable of it being checked:
+    // http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html#checkedState-prop
 }
