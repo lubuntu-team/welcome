@@ -61,7 +61,7 @@ void MainWindow::on_buttonCommunity_clicked()
 
 void MainWindow::on_buttonContribute_clicked()
 {
-    QString contributeLink = "https://phab.lubuntu.me/w/contributor-guide/";
+    QString contributeLink = "https://manual.lubuntu.me/stable/B/Contributing.html";
     QDesktopServices::openUrl(QUrl(contributeLink));
 }
 
