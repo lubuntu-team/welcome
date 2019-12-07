@@ -55,8 +55,8 @@ void MainWindow::on_buttonLXQtConfigurationCenter_clicked()
 
 void MainWindow::on_buttonCommunity_clicked()
 {
-    QString contributeLink = "https://lubuntu.me/links/";
-    QDesktopServices::openUrl(QUrl(contributeLink));
+    QString communityLink = "https://lubuntu.me/links/";
+    QDesktopServices::openUrl(QUrl(communityLink));
 }
 
 void MainWindow::on_buttonContribute_clicked()
@@ -64,6 +64,29 @@ void MainWindow::on_buttonContribute_clicked()
     QString contributeLink = "https://manual.lubuntu.me/stable/B/Contributing.html";
     QDesktopServices::openUrl(QUrl(contributeLink));
 }
+
+void MainWindow::on_buttonSoftware_clicked()
+{
+    // Open Discover software center
+    QProcess *process = new QProcess(this);
+    QString file = "/usr/bin/plasma-discover";
+    process->start(file);
+}
+
+void MainWindow::on_buttonDonate_clicked()
+{
+    // Open Lubuntu Donate link
+    QString donateLink = "https://lubuntu.me/donate/";
+    QDesktopServices::openUrl(QUrl(donateLink));
+}
+
+void MainWindow::on_buttonBugReports_clicked()
+{
+    // Open Lubuntu Bug reporting wiki page
+    QString bugLink = "https://phab.lubuntu.me/w/bugs/";
+    QDesktopServices::openUrl(QUrl(bugLink));
+}
+
 
 void MainWindow::on_actionAbout_triggered()
 {
@@ -92,3 +115,4 @@ void MainWindow::on_checkBox_stateChanged(int arg1)
     // Add checkbox stateChanged functionality that depends on a boolean variable of it being checked:
     // http://doc.qt.io/qt-5/qml-qtquick-controls-checkbox.html#checkedState-prop
 }
+

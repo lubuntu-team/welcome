@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>300</height>
+    <width>604</width>
+    <height>312</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">color: white;
 
-background-color: black;</string>
+background-color: rgb(61, 61, 61);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QFormLayout" name="formLayout">
@@ -72,17 +72,41 @@ background-color: black;</string>
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="buttonSoftware">
+        <property name="text">
+         <string>Software</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonDonate">
+        <property name="text">
+         <string>Donate To Lubuntu</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonBugReports">
+        <property name="text">
+         <string>Bug Reporting</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item row="0" column="1">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QTextEdit" name="textEdit">
+        <property name="styleSheet">
+         <string notr="true">background color:rgb(25, 25, 25)</string>
+        </property>
         <property name="html">
          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;What's new in 19.04&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Here is a simple and quick read of some of the new things in the latest version of Lubuntu&lt;/span&gt;&lt;/p&gt;
@@ -94,6 +118,9 @@ p, li { white-space: pre-wrap; }
       </item>
       <item>
        <widget class="QCheckBox" name="checkBox">
+        <property name="styleSheet">
+         <string notr="true">background color:rgb(35, 35, 35)</string>
+        </property>
         <property name="text">
          <string>Show this window at startup</string>
         </property>
@@ -108,8 +135,8 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>600</width>
-     <height>34</height>
+     <width>604</width>
+     <height>28</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -139,8 +166,6 @@ p, li { white-space: pre-wrap; }
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="welcomecenterresource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

@@ -48,6 +48,12 @@ private slots:
 
     void on_checkBox_stateChanged(int arg1);
 
+    void on_buttonSoftware_clicked();
+
+    void on_buttonDonate_clicked();
+
+    void on_buttonBugReports_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
