@@ -166,6 +166,8 @@ p, li { white-space: pre-wrap; }
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="welcomecenterresource.qrc"/>
+ </resources>
  <connections/>
 </ui>
