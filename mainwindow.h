@@ -33,8 +33,6 @@ public:
 private slots:
     void on_buttonManual_clicked();
 
-    void on_buttonMonitorSetup_clicked();
-
     void on_buttonLXQtConfigurationCenter_clicked();
 
     void on_buttonCommunity_clicked();

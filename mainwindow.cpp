@@ -39,13 +39,6 @@ void MainWindow::on_buttonManual_clicked()
     QDesktopServices::openUrl(QUrl(manualLink));
 }
 
-void MainWindow::on_buttonMonitorSetup_clicked()
-{
-    QProcess *process = new QProcess(this);
-    QString file = "/usr/bin/lxqt-config-monitor";
-    process->start(file);
-}
-
 void MainWindow::on_buttonLXQtConfigurationCenter_clicked()
 {
     QProcess *process = new QProcess(this);
