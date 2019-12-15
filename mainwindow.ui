@@ -64,6 +64,9 @@ background-color: rgb(61, 61, 61);</string>
       </item>
       <item>
        <widget class="QPushButton" name="buttonSoftware">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Launch the Discover software center.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Software</string>
         </property>
@@ -71,6 +74,9 @@ background-color: rgb(61, 61, 61);</string>
       </item>
       <item>
        <widget class="QPushButton" name="buttonDonate">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Donate to the Lubuntu project and buy Lubuntu merch!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Donate To Lubuntu</string>
         </property>
@@ -78,6 +84,9 @@ background-color: rgb(61, 61, 61);</string>
       </item>
       <item>
        <widget class="QPushButton" name="buttonBugReports">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Have a bug or issue? Click here to find out how to report it.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>Bug Reporting</string>
         </property>
@@ -157,8 +166,6 @@ p, li { white-space: pre-wrap; }
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="welcomecenterresource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
